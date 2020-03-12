@@ -5,7 +5,7 @@
     </div>
 
     <div>
-      <div id="carouselContainer">
+      <div data-aos="slide-up" id="carouselContainer">
         <b-carousel
           id="carousel-fade"
           style="text-shadow: 0px 0px 2px #000;"
@@ -68,8 +68,11 @@
         </b-carousel>
       </div>
     </div>
-
-    <div v-if="slide === 0" class="projectDescriptionContainer">
+    <div
+      data-aos="fade-left"
+      v-if="slide === 0"
+      class="projectDescriptionContainer"
+    >
       <h1 class="projectTitle">
         {{ descriptions[slide].title }}
       </h1>
@@ -84,7 +87,11 @@
       </div>
     </div>
 
-    <div v-if="slide === 1" class="projectDescriptionContainer">
+    <div
+      data-aos="fade-left"
+      v-if="slide === 1"
+      class="projectDescriptionContainer"
+    >
       <h1 class="projectTitle">
         {{ descriptions[slide].title }}
       </h1>
@@ -99,7 +106,11 @@
       </div>
     </div>
 
-    <div v-if="slide === 2" class="projectDescriptionContainer">
+    <div
+      data-aos="fade-left"
+      v-if="slide === 2"
+      class="projectDescriptionContainer"
+    >
       <h1 class="projectTitle">
         {{ descriptions[slide].title }}
       </h1>
@@ -114,7 +125,11 @@
       </div>
     </div>
 
-    <div v-if="slide === 3" class="projectDescriptionContainer">
+    <div
+      data-aos="fade-left"
+      v-if="slide === 3"
+      class="projectDescriptionContainer"
+    >
       <h1 class="projectTitle">
         {{ descriptions[slide].title }}
       </h1>
@@ -172,6 +187,7 @@ export default {
 
 <style scoped>
 #Projects {
+  overflow: hidden;
   height: 100vh;
   width: 100%;
   background: linear-gradient(90deg, #413c69, #4a47a3);

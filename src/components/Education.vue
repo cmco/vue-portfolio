@@ -3,7 +3,12 @@
     <div id="educationTitle">
       <h1>Education</h1>
     </div>
-    <div id="bpa" class="courseContainer">
+    <div
+      data-aos-delay="100"
+      data-aos="flip-down"
+      id="bpa"
+      class="courseContainer"
+    >
       <div>
         <img class="logo" src="@/assets/Icons/NCPAGLogo.png" alt="" />
         <img class="logo" src="@/assets/Icons/UPLogo.png" alt="" />
@@ -17,7 +22,12 @@
         >
       </a>
     </div>
-    <div id="bcs" class="courseContainer">
+    <div
+      data-aos-delay="200"
+      data-aos="flip-down"
+      id="bcs"
+      class="courseContainer"
+    >
       <div>
         <img class="logo" src="@/assets/Icons/DCSLogo.png" alt="" />
         <img class="logo" src="@/assets/Icons/UPLogo.png" alt="" />
@@ -40,6 +50,7 @@ export default {
 
 <style scoped>
 .Education {
+  overflow: hidden;
   height: 110vh;
   color: #eab9c9;
   background: linear-gradient(180deg, #4a47a3, #413c69);

@@ -6,10 +6,12 @@
         <b-nav-item href="#aboutTitle">About Me</b-nav-item>
         <b-nav-item href="#educationTitle">Education</b-nav-item>
         <b-nav-item href="#projectsTitle">Projects</b-nav-item>
-        <b-nav-item href="#contactsTitle">Contact</b-nav-item>
+        <b-nav-item href="#contactsTitle">Contact Me</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
-    <b-nav-item href="#">Documentation</b-nav-item>
+    <b-nav-item href="https://github.com/cmco/vue-portfolio"
+      >Documentation</b-nav-item
+    >
   </b-navbar>
 </template>
 
