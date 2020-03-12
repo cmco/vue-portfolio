@@ -65,6 +65,7 @@ export default {
   overflow: hidden;
   width: 100%;
   background: linear-gradient(180deg, #4a47a3, #413c69);
+  padding-bottom: 4em;
 }
 
 #contactsTitle {

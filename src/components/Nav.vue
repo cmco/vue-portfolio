@@ -5,7 +5,10 @@
       <b-navbar-nav>
         <b-nav-item href="#aboutTitle">About Me</b-nav-item>
         <b-nav-item href="#educationTitle">Education</b-nav-item>
+        <b-nav-item href="#languagesTitle">Languages</b-nav-item>
         <b-nav-item href="#projectsTitle">Projects</b-nav-item>
+        <b-nav-item href="#workTitle">Work Experience</b-nav-item>
+
         <b-nav-item href="#contactsTitle">Contact Me</b-nav-item>
       </b-navbar-nav>
     </b-collapse>

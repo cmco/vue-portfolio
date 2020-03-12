@@ -4,6 +4,7 @@
     <Nav />
     <About />
     <Education />
+    <Languages />
     <Projects />
     <Work />
     <Contacts />
@@ -15,6 +16,7 @@ import ProfileAndName from "./components/ProfileAndName.vue";
 import Nav from "@/components/Nav.vue";
 import About from "./components/About.vue";
 import Education from "./components/Education.vue";
+import Languages from "./components/Languages.vue";
 import Projects from "@/components/Projects.vue";
 import Work from "@/components/Work.vue";
 import Contacts from "@/components/Contacts.vue";
@@ -26,6 +28,7 @@ export default {
     Nav,
     About,
     Education,
+    Languages,
     Projects,
     Work,
     Contacts

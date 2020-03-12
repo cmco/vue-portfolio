@@ -155,7 +155,8 @@ export default {
         {
           id: 1,
           title: "Foodscape",
-          body: "Food Blog Site I made for me and my girlfriend's food vlog.",
+          body:
+            "Food Blog Site made for me and my girlfriend's food vlog. One of the first sites I developed, serving as practice for image src handling.",
           languages: ["Vanilla JS", "HTML", "CSS"]
         },
         {
@@ -175,7 +176,8 @@ export default {
         {
           id: 4,
           title: "React Pokédex",
-          body: "React App of Pokédex. Done as a practice of passing props.",
+          body:
+            "React App of Pokédex. Done as a practice of mapping default props and rendering them using tempalte literals.",
           languages: ["ReactJS", "HTML", "CSS"]
         }
       ]
@@ -187,9 +189,10 @@ export default {
 <style scoped>
 .Projects {
   overflow: hidden;
-  height: 100vh;
-  width: 100%;
+  /* height: 100vh; */
+  /* width: 100%; */
   background: linear-gradient(90deg, #413c69, #4a47a3);
+  padding-bottom: 4em;
 }
 
 #projectsTitle {
@@ -197,7 +200,6 @@ export default {
   display: block;
   float: left;
   text-align: left;
-  width: 100%;
   color: orange;
   margin: 1em;
   padding-top: 4em;
@@ -207,12 +209,8 @@ export default {
   clear: both;
   float: left;
   margin: 2em;
-  width: 45%;
+  width: 40%;
   box-shadow: 0px 10px 25px 2px rgba(0, 0, 0, 0.75);
-}
-
-#tooltip {
-  clear: both;
 }
 
 .projectDescriptionContainer {
@@ -224,9 +222,5 @@ export default {
 
 .projectDescription {
   height: 5em;
-}
-
-.languageListContainer {
-  width: fit-content;
 }
 </style>

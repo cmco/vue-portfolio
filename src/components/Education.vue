@@ -51,7 +51,7 @@ export default {
 <style scoped>
 .Education {
   overflow: hidden;
-  height: 110vh;
+  /* height: 110vh; */
   color: #eab9c9;
   background: linear-gradient(180deg, #4a47a3, #413c69);
 }
