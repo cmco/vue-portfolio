@@ -12,7 +12,7 @@
         controls
         indicators
       >
-        <a href="">
+        <a href="https://github.com/cmco/foodscape">
           <b-carousel-slide>
             <template v-slot:img>
               <img
@@ -25,7 +25,7 @@
             </template>
           </b-carousel-slide>
         </a>
-        <a href="">
+        <a href="https://github.com/cmco/gobook">
           <b-carousel-slide>
             <template v-slot:img>
               <img
@@ -38,7 +38,7 @@
             </template>
           </b-carousel-slide>
         </a>
-        <a href="">
+        <a href="https://github.com/cmco/react-hangman">
           <b-carousel-slide>
             <template v-slot:img>
               <img
@@ -51,7 +51,7 @@
             </template>
           </b-carousel-slide>
         </a>
-        <a href="">
+        <a href="https://github.com/cmco/react-pokedex">
           <b-carousel-slide>
             <template v-slot:img>
               <img
