@@ -7,6 +7,7 @@
     <Languages />
     <Projects />
     <Work />
+    <ActivitiesAndSkills />
     <Contacts />
   </div>
 </template>
@@ -19,6 +20,7 @@ import Education from "./components/Education.vue";
 import Languages from "./components/Languages.vue";
 import Projects from "@/components/Projects.vue";
 import Work from "@/components/Work.vue";
+import ActivitiesAndSkills from "@/components/ActivitiesAndSkills.vue";
 import Contacts from "@/components/Contacts.vue";
 
 export default {
@@ -31,6 +33,7 @@ export default {
     Languages,
     Projects,
     Work,
+    ActivitiesAndSkills,
     Contacts
   },
   data() {

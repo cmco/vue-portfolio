@@ -8,7 +8,9 @@
         <b-nav-item href="#languagesTitle">Languages</b-nav-item>
         <b-nav-item href="#projectsTitle">Projects</b-nav-item>
         <b-nav-item href="#workTitle">Work Experience</b-nav-item>
-
+        <b-nav-item href="#activitiesandskillsTitle"
+          >Other Activities and Skills</b-nav-item
+        >
         <b-nav-item href="#contactsTitle">Contact Me</b-nav-item>
       </b-navbar-nav>
     </b-collapse>

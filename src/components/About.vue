@@ -32,11 +32,13 @@
           <h5 id="secondParagraph">
             It came as no surprise to anyone that when I entered college, I
             chose Computer Science as my degree. And while things didn't exactly
-            work out for me in there, my passion for dev and tech was stronger
-            than ever before.<br /><br />
+            work out for me in there, my passion for dev and tech still remain
+            as strong.<br /><br />
             Driven by my dreams to become a Web Developer, I self-studied and
             continously applied what I learned during my free time.
-            <br /><br />And now, here I am...
+            <br /><br />
+            This portfolio site is what I believe to be one of many proof that
+            can best exemplify how much my passion is in what I do.
           </h5>
         </div>
       </div>

@@ -213,6 +213,10 @@ export default {
   box-shadow: 0px 10px 25px 2px rgba(0, 0, 0, 0.75);
 }
 
+.projectTitle {
+  color: orange;
+}
+
 #descriptionContainer {
   width: 40%;
   float: right;
