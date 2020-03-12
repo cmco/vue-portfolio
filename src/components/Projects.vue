@@ -1,5 +1,5 @@
 <template>
-  <div id="Projects">
+  <div class="Projects">
     <div id="projectsTitle">
       <h1>Projects</h1>
     </div>
@@ -185,7 +185,7 @@ export default {
 </script>
 
 <style scoped>
-#Projects {
+.Projects {
   overflow: hidden;
   height: 100vh;
   width: 100%;

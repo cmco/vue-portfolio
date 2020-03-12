@@ -5,6 +5,7 @@
     <About />
     <Education />
     <Projects />
+    <Work />
     <Contacts />
   </div>
 </template>
@@ -15,6 +16,7 @@ import Nav from "@/components/Nav.vue";
 import About from "./components/About.vue";
 import Education from "./components/Education.vue";
 import Projects from "@/components/Projects.vue";
+import Work from "@/components/Work.vue";
 import Contacts from "@/components/Contacts.vue";
 
 export default {
@@ -25,6 +27,7 @@ export default {
     About,
     Education,
     Projects,
+    Work,
     Contacts
   },
   data() {
@@ -42,6 +45,5 @@ export default {
   font-family: Roboto, Helvetica, Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* color: #2c3e50; */
 }
 </style>
