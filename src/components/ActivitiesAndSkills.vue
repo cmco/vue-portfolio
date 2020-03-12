@@ -42,7 +42,7 @@ export default {
         "Critical Thinking",
         "Conflict Resolution",
         "Code Refactoring",
-        "Group Facilitiation",
+        "Group Facilitation",
         "Writing Proficiency",
         "Quick Learner"
       ]
