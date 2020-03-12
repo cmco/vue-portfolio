@@ -45,7 +45,6 @@ export default {
 <style>
 .Languages {
   overflow: hidden;
-  /* height: 100vh; */
   width: 100%;
   background: linear-gradient(90deg, #4a47a3, #413c69);
 }
@@ -62,7 +61,6 @@ export default {
 }
 
 #languageContainer {
-  /* margin: 2em; */
   padding-top: 0;
   clear: both;
   display: flex;

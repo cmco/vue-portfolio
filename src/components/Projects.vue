@@ -3,143 +3,146 @@
     <div id="projectsTitle">
       <h1>Projects</h1>
     </div>
-
-    <div data-aos="slide-up" id="carouselContainer">
-      <b-carousel
-        id="carousel-fade"
-        style="text-shadow: 0px 0px 2px #000;"
-        v-model="slide"
-        controls
-        indicators
+    <div id="descriptionContainer">
+      <div
+        data-aos="fade-left"
+        v-if="slide === 0"
+        class="projectDescriptionContainer"
       >
-        <a href="https://github.com/cmco/foodscape">
-          <b-carousel-slide>
-            <template v-slot:img>
-              <img
-                class="d-block img-fluid w-100"
-                width="1024"
-                height="480"
-                src="@/assets/vlogsitePreview.png"
-                alt="image slot"
-              />
-            </template>
-          </b-carousel-slide>
-        </a>
-        <a href="https://github.com/cmco/gobook">
-          <b-carousel-slide>
-            <template v-slot:img>
-              <img
-                class="d-block img-fluid w-100"
-                width="1024"
-                height="480"
-                src="@/assets/gobookPreview.png"
-                alt="image slot"
-              />
-            </template>
-          </b-carousel-slide>
-        </a>
-        <a href="https://github.com/cmco/react-hangman">
-          <b-carousel-slide>
-            <template v-slot:img>
-              <img
-                class="d-block img-fluid w-100"
-                width="1024"
-                height="480"
-                src="@/assets/hangmanPreview.png"
-                alt="image slot"
-              />
-            </template>
-          </b-carousel-slide>
-        </a>
-        <a href="https://github.com/cmco/react-pokedex">
-          <b-carousel-slide>
-            <template v-slot:img>
-              <img
-                class="d-block img-fluid w-100"
-                width="1024"
-                height="480"
-                src="@/assets/pokedexPreview.png"
-                alt="image slot"
-              />
-            </template>
-          </b-carousel-slide>
-        </a>
-      </b-carousel>
-    </div>
+        <h1 class="projectTitle">
+          {{ descriptions[slide].title }}
+        </h1>
+        <h3 class="projectDescription">
+          {{ descriptions[slide].body }}
+        </h3>
+        <h4>Languages</h4>
+        <div class="languageListContainer">
+          <li v-for="language in descriptions[slide].languages" :key="language">
+            {{ language }}
+          </li>
+        </div>
+      </div>
 
-    <div
-      data-aos="fade-left"
-      v-if="slide === 0"
-      class="projectDescriptionContainer"
-    >
-      <h1 class="projectTitle">
-        {{ descriptions[slide].title }}
-      </h1>
-      <h3 class="projectDescription">
-        {{ descriptions[slide].body }}
-      </h3>
-      <h4>Languages</h4>
-      <div class="languageListContainer">
-        <li v-for="language in descriptions[slide].languages" :key="language">
-          {{ language }}
-        </li>
+      <div
+        data-aos="fade-left"
+        v-if="slide === 1"
+        class="projectDescriptionContainer"
+      >
+        <h1 class="projectTitle">
+          {{ descriptions[slide].title }}
+        </h1>
+        <h3 class="projectDescription">
+          {{ descriptions[slide].body }}
+        </h3>
+        <h4>Languages</h4>
+        <div class="languageListContainer">
+          <li v-for="language in descriptions[slide].languages" :key="language">
+            {{ language }}
+          </li>
+        </div>
+      </div>
+
+      <div
+        data-aos="fade-left"
+        v-if="slide === 2"
+        class="projectDescriptionContainer"
+      >
+        <h1 class="projectTitle">
+          {{ descriptions[slide].title }}
+        </h1>
+        <h3 class="projectDescription">
+          {{ descriptions[slide].body }}
+        </h3>
+        <h4>Languages</h4>
+        <div class="languageListContainer">
+          <li v-for="language in descriptions[slide].languages" :key="language">
+            {{ language }}
+          </li>
+        </div>
+      </div>
+
+      <div
+        data-aos="fade-left"
+        v-if="slide === 3"
+        class="projectDescriptionContainer"
+      >
+        <h1 class="projectTitle">
+          {{ descriptions[slide].title }}
+        </h1>
+        <h3 class="projectDescription">
+          {{ descriptions[slide].body }}
+        </h3>
+        <h4>Languages</h4>
+        <div class="languageListContainer">
+          <li v-for="language in descriptions[slide].languages" :key="language">
+            {{ language }}
+          </li>
+        </div>
       </div>
     </div>
 
-    <div
-      data-aos="fade-left"
-      v-if="slide === 1"
-      class="projectDescriptionContainer"
-    >
-      <h1 class="projectTitle">
-        {{ descriptions[slide].title }}
-      </h1>
-      <h3 class="projectDescription">
-        {{ descriptions[slide].body }}
-      </h3>
-      <h4>Languages</h4>
-      <div class="languageListContainer">
-        <li v-for="language in descriptions[slide].languages" :key="language">
-          {{ language }}
-        </li>
-      </div>
-    </div>
-
-    <div
-      data-aos="fade-left"
-      v-if="slide === 2"
-      class="projectDescriptionContainer"
-    >
-      <h1 class="projectTitle">
-        {{ descriptions[slide].title }}
-      </h1>
-      <h3 class="projectDescription">
-        {{ descriptions[slide].body }}
-      </h3>
-      <h4>Languages</h4>
-      <div class="languageListContainer">
-        <li v-for="language in descriptions[slide].languages" :key="language">
-          {{ language }}
-        </li>
-      </div>
-    </div>
-
-    <div
-      data-aos="fade-left"
-      v-if="slide === 3"
-      class="projectDescriptionContainer"
-    >
-      <h1 class="projectTitle">
-        {{ descriptions[slide].title }}
-      </h1>
-      <h3 class="projectDescription">
-        {{ descriptions[slide].body }}
-      </h3>
-      <h4>Languages</h4>
-      <div class="languageListContainer">
-        <li v-for="language in descriptions[slide].languages" :key="language">
-          {{ language }}
-        </li>
+    <div>
+      <div data-aos="slide-up" id="carouselContainer">
+        <b-carousel
+          id="carousel-fade"
+          style="text-shadow: 0px 0px 2px #000;"
+          v-model="slide"
+          controls
+          indicators
+        >
+          <a href="https://github.com/cmco/foodscape">
+            <b-carousel-slide>
+              <template v-slot:img>
+                <img
+                  class="d-block img-fluid w-100"
+                  width="1024"
+                  height="480"
+                  src="@/assets/vlogsitePreview.png"
+                  alt="image slot"
+                />
+              </template>
+            </b-carousel-slide>
+          </a>
+          <a href="https://github.com/cmco/gobook">
+            <b-carousel-slide>
+              <template v-slot:img>
+                <img
+                  class="d-block img-fluid w-100"
+                  width="1024"
+                  height="480"
+                  src="@/assets/gobookPreview.png"
+                  alt="image slot"
+                />
+              </template>
+            </b-carousel-slide>
+          </a>
+          <a href="https://github.com/cmco/react-hangman">
+            <b-carousel-slide>
+              <template v-slot:img>
+                <img
+                  class="d-block img-fluid w-100"
+                  width="1024"
+                  height="480"
+                  src="@/assets/hangmanPreview.png"
+                  alt="image slot"
+                />
+              </template>
+            </b-carousel-slide>
+          </a>
+          <a href="https://github.com/cmco/react-pokedex">
+            <b-carousel-slide>
+              <template v-slot:img>
+                <img
+                  class="d-block img-fluid w-100"
+                  width="1024"
+                  height="480"
+                  src="@/assets/pokedexPreview.png"
+                  alt="image slot"
+                />
+              </template>
+            </b-carousel-slide>
+          </a>
+        </b-carousel>
       </div>
     </div>
   </div>
@@ -189,8 +192,6 @@ export default {
 <style scoped>
 .Projects {
   overflow: hidden;
-  /* height: 100vh; */
-  /* width: 100%; */
   background: linear-gradient(90deg, #413c69, #4a47a3);
   padding-bottom: 4em;
 }
@@ -206,21 +207,27 @@ export default {
 }
 
 #carouselContainer {
-  clear: both;
   float: left;
   margin: 2em;
-  width: 40%;
+  width: 50%;
   box-shadow: 0px 10px 25px 2px rgba(0, 0, 0, 0.75);
+}
+
+#descriptionContainer {
+  width: 40%;
+  float: right;
+  clear: both;
 }
 
 .projectDescriptionContainer {
   float: right;
   margin: 1em;
-  width: 40%;
+  width: 100%;
   color: #eab9c9;
 }
 
 .projectDescription {
+  clear: both;
   height: 5em;
 }
 </style>
