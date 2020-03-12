@@ -4,70 +4,69 @@
       <h1>Projects</h1>
     </div>
 
-    <div>
-      <div data-aos="slide-up" id="carouselContainer">
-        <b-carousel
-          id="carousel-fade"
-          style="text-shadow: 0px 0px 2px #000;"
-          v-model="slide"
-          controls
-          indicators
-        >
-          <a href="">
-            <b-carousel-slide>
-              <template v-slot:img>
-                <img
-                  class="d-block img-fluid w-100"
-                  width="1024"
-                  height="480"
-                  src="@/assets/vlogsitePreview.png"
-                  alt="image slot"
-                />
-              </template>
-            </b-carousel-slide>
-          </a>
-          <a href="">
-            <b-carousel-slide>
-              <template v-slot:img>
-                <img
-                  class="d-block img-fluid w-100"
-                  width="1024"
-                  height="480"
-                  src="@/assets/gobookPreview.png"
-                  alt="image slot"
-                />
-              </template>
-            </b-carousel-slide>
-          </a>
-          <a href="">
-            <b-carousel-slide>
-              <template v-slot:img>
-                <img
-                  class="d-block img-fluid w-100"
-                  width="1024"
-                  height="480"
-                  src="@/assets/hangmanPreview.png"
-                  alt="image slot"
-                />
-              </template>
-            </b-carousel-slide>
-          </a>
-          <a href="">
-            <b-carousel-slide>
-              <template v-slot:img>
-                <img
-                  class="d-block img-fluid w-100"
-                  width="1024"
-                  height="480"
-                  src="@/assets/pokedexPreview.png"
-                  alt="image slot"
-                />
-              </template>
-            </b-carousel-slide>
-          </a>
-        </b-carousel>
-      </div>
+    <div data-aos="slide-up" id="carouselContainer">
+      <b-carousel
+        id="carousel-fade"
+        style="text-shadow: 0px 0px 2px #000;"
+        v-model="slide"
+        controls
+        indicators
+      >
+        <a href="">
+          <b-carousel-slide>
+            <template v-slot:img>
+              <img
+                class="d-block img-fluid w-100"
+                width="1024"
+                height="480"
+                src="@/assets/vlogsitePreview.png"
+                alt="image slot"
+              />
+            </template>
+          </b-carousel-slide>
+        </a>
+        <a href="">
+          <b-carousel-slide>
+            <template v-slot:img>
+              <img
+                class="d-block img-fluid w-100"
+                width="1024"
+                height="480"
+                src="@/assets/gobookPreview.png"
+                alt="image slot"
+              />
+            </template>
+          </b-carousel-slide>
+        </a>
+        <a href="">
+          <b-carousel-slide>
+            <template v-slot:img>
+              <img
+                class="d-block img-fluid w-100"
+                width="1024"
+                height="480"
+                src="@/assets/hangmanPreview.png"
+                alt="image slot"
+              />
+            </template>
+          </b-carousel-slide>
+        </a>
+        <a href="">
+          <b-carousel-slide>
+            <template v-slot:img>
+              <img
+                class="d-block img-fluid w-100"
+                width="1024"
+                height="480"
+                src="@/assets/pokedexPreview.png"
+                alt="image slot"
+              />
+            </template>
+          </b-carousel-slide>
+        </a>
+      </b-carousel>
     </div>
+
     <div
       data-aos="fade-left"
       v-if="slide === 0"
@@ -198,7 +197,7 @@ export default {
   display: block;
   float: left;
   text-align: left;
-  width: auto;
+  width: 100%;
   color: orange;
   margin: 1em;
   padding-top: 4em;
@@ -210,6 +209,10 @@ export default {
   margin: 2em;
   width: 45%;
   box-shadow: 0px 10px 25px 2px rgba(0, 0, 0, 0.75);
+}
+
+#tooltip {
+  clear: both;
 }
 
 .projectDescriptionContainer {
